@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cambo', serif;
+    /* overflow-x: auto; */
+  }
+  body {
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+  }
+  .container{
+    margin:45px;
+    text-align: center;
+    display:block;
+  }
+  .container>input:focus{
+    outline: none;
+  }
+  .container1{
+    display:none;
+  }
+  #player-1:hover{
+    border: 3px solid rgb(171, 97, 6);
+  }
+  #player-2:hover{
+    border: 3px solid rgb(171, 97, 6);
+  }
+  h1{
+    /* margin-top: 10px; */
+    margin:40px 0px;
+    text-align: center;
+  }
+  
+  .message{
+    /* margin:0 0px; */
+    text-align: center;
+    font-size: 5 rem;
+    font-weight: 700;
+  }
+
+  .container>input{
+    padding: 8px;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+  }
+  /* .tile {
+    border: 1px solid white;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+} */
+
+  table {
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  tr,td{
+    margin: 0 45px;
+    width: 100px; 
+    height:100px;
+     vertical-align: middle; /* better than flex-direction  */
+    background-color: rgb(195, 146, 241);
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  /* .tile{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap:30px;
+    justify-content: space-around;
+    min-width: 50px;
+    min-height: 50px;
+    /* background-color: aqua; 
+  } */
+  .container1>div{
+    margin: 22px auto;
+    display: flex;
+    flex-direction:column;
+  } 
+  .container1>div>.tile{
+    padding: 6px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap:30px;
+    justify-content: space-around;
+    width: 10px;
+    height: 50px;
+    /* align-items: center; */
+    /* vertical-align: middle; */
+    background-color:rgb(178, 126, 226);
+    border: 2px solid rgb(10, 8, 10);
+    cursor: pointer;
+  }
+  /* .addPlayer{
+    padding: 10px;
+    width:15vw;
+     height: 7vh;
+     font-family:'Inter';
+     font-size:20px;
+     font-weight: 900;
+      background-color:rgb(198, 18, 235); 
+     color: rgb(5, 2, 17);
+     font-weight: 600; 
+     font-size: large;
+     border-radius: 6px;
+     border-color:rgb(12, 10, 10);
+  } */
+  #addPlayer{
+    margin-top: 14px;
+}
+#addPlayer>button{
+    padding: 10px 20px 10px 20px;
+    color: white;
+    /* width:15vw;
+     height: 7vh; */
+     font-family:'Inter';
+     font-size:20px;
+     font-weight: 900;
+      background-color:black;
+}
+  .win{
+    background-color: darkviolet;
+  }

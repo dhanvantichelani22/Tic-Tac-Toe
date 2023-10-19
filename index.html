@@ -1,0 +1,72 @@
+<!-- Tic Tac Toe
+Create a webpage that allows user to play the multiplayer tic tac toe game. The webpage should
+ include the following elements:
+An outer div with class container that contains all the content of the page.
+First user is provided by two input boxes for names of both the users with id player-1 and 
+player-2 and a submit button with id submit.
+After user entered name for the players and click on the submit button then a tic tac toe 
+board appears on the screen.
+On the board page there is a h1 tag with content Tic Tac Toe. There should be a div with 
+class="message" to show whose turn is. For example : harsh, you're up if harsh is user1.
+The board should consist of 9 cells in a grid each with id 1, 2, 3, 4.... and so on.
+When user 1 clicks on any cell of the board it shows x and for user 2 it shows o.
+If a user wins a game, then a message is the div with class="message" is shown {username} 
+congratulations you won!.
+The initial view of the page should look like this:
+After the user enters the name of both the players and click on submit button, the view of 
+page should look like below:-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cambo&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>TIC TAC TOE</h1>
+        <b><label for="player-1">Player 1</label></b>
+      <input type="text" id="player-1" placeholder="enter name" required>
+      <br><br>
+      <b><label for="player-2">Player 2</label></b>
+      <input type="text" id="player-2" placeholder="enter name" required>
+      <br><br>
+      <div id="addPlayer">
+      <button>Start Game</button></div>
+    </div>
+    <div class="container1">
+      <h1>TIC TAC TOE</h1>
+      <div class="message">
+      <!-- <span class="display-player playerX">X</span> -->
+    </div>
+        <table>
+          <tr id="board">
+            <td id="1"></td>
+            <td id="2"></td>
+            <td id="3"></td>
+          </tr>
+          <tr>
+            <td id="4"></td>
+            <td id="5"></td>
+            <td id="6"></td>
+          </tr>
+          <tr>
+            <td id="7"></td>
+            <td id="8"></td>
+            <td id="9"></td>
+          </tr>
+        </table>
+            <!-- <div class="tile"></div>
+            <div class="tile"></div> -->
+      </div>
+</body>
+<script src="tictac.js"></script>
+</html>
+<!-- https://course.acciojob.com/open-web-editor?question=7c7e1828-3e46-4a1f-b38a-f710e0ea4051 -->
